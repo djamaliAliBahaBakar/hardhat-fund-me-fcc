@@ -33,7 +33,7 @@ contract FundMe {
 
      //States variables
      uint256 public constant MINIMUM_USD = 50 * 1e18;
-     address[] private funders;
+     address[] public funders;
      mapping(address => uint256) public addressToAmountFunded;
      address private immutable i_owner;
 
